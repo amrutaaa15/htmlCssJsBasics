@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* all childs */
+        article p{ 
+            color: hotpink;
+        }
+        /* only direct childs */
+        article>p{
+            color: blue;
+        }
+        /* for siblings */
+        section~p{
+            border: 2px solid khaki;
+        }
+        /* for immediate next child {} */
+        section+p{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+   <article>
+       <p>this is para 1</p>
+       <span>1</span>
+       <span>2</span>
+       <span>3</span>
+       <p>this is para 2</p>
+       <p>this is para 3</p>
+
+       <section>
+           <p>this is para 4</p>
+           <p>this is para 4</p>
+           <p>this is para 4</p>
+           <span>4</span>
+           <span>5</span>
+       </section>
+       <p>this is para 5</p>
+       <span>hie</span>
+       <p>hie</p>
+   </article>
+</body>
+</html>

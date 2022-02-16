@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: antiquewhite;
+            border: 4px brown;
+            flex-direction: right;
+        }
+        .item{
+            padding: 2px;
+            margin: 2px;
+            border: 2px solid brown;
+
+        }
+        #cont1{
+            justify-content: center;
+        }
+        #cont2{
+            height: 100px;
+            align-items: center;
+        }
+        #cont3{
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
+        #cont4 div{
+            background-color: lightcoral;
+        }
+        #cont4 div:nth-of-type(1){flex-grow: 1;}
+        #cont4 div:nth-of-type(2){flex-grow: 3;}
+        #cont4 div:nth-of-type(3){flex-grow: 1;}
+        #cont4 div:nth-of-type(4){flex-grow: 5;}
+        #cont4 div:nth-of-type(5){flex-grow: 1;}
+        #cont4 div:nth-of-type(6){flex-grow: 7;}
+
+
+        #cont5 div {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+
+        #cont5 div:nth-of-type(3){flex-shrink: 3;}
+
+        .box{
+         width:200px;
+         height: 200px;
+         background-color: rgb(27, 99, 170);
+         margin: 10px;
+         transition: 3s;
+       }
+
+       #boxx:hover{
+           transform: translateX(50px);
+           transition-duration: 10s;
+       } 
+       
+       #box box1{
+           transition-property: width;
+       }
+       #box1:hover{
+           width: 300px;
+           transition-duration: 10s;
+       } 
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    <hr>
+    <div class="container" id="cont2">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    <hr>
+    <div class="container" id="cont3">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    <hr>
+    <div class="container" id="cont4">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    <hr>
+    <div class="container" id="cont5">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+    <hr>
+    <div class="box" id="boxx"></div>
+    <hr>
+    <div class="box" id="box1"></div>
+    <hr>
+
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myJsFiles/validation.js"></script>
+</head>
+<body>
+    <form action="success.html"  onsubmit="return Val()" novalidate>
+
+        <label for="inp1">Enter Name</label>
+        <input type="text" name="" onblur="validation()" id="inp1" required><br>
+        <span id="sp"></span><br>
+
+        <label for="">Enter age</label>
+        <input type="number" name="" onblur="validation1()" id="inp2" required><br>
+        <span id="sp1"></span><br>
+
+        <label for="">Enter email</label>
+        <input type="email" name="" onblur="validation2()" id="inp3" required><br>
+        <span id="sp2"></span><br>
+
+        <label for="">Enter password</label>
+        <input type="password" name="" onblur="validation3()" id="inp4" required><br>
+        <span id="sp3"></span><br>
+        
+        <label for="">Enter password</label>
+        <input type="password" name="" onblur="validation4()" id="inp5" required><br>
+        <span id="sp4"></span><br>
+
+       
+        <input type="checkbox" name="" onchange="toggle()" id="inp6"> <label for="">Show password</label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

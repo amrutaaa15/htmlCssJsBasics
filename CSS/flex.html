@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     .flex ol{
+         background-color: blanchedalmond;
+         display: flex;
+         flex-direction: row-reverse;
+     }
+     li{
+         margin: 12px;
+         padding: 12px;
+       list-style: none;
+     }
+     .flexx{
+         display: flex;
+         background-color: blanchedalmond;
+     }
+     div{
+        margin: 12px;
+         padding: 12px;
+     }
+     #box{
+         order: 4;
+     }
+     #box1{
+         order: 3;
+     }
+     #box2{
+         order: 2;
+     }
+     #box3{
+         order: 1;
+     }
+     .box{
+         border: 2px solid black;
+     }
+     .container{
+         width: 700px;
+         display: flex;
+         background-color: blanchedalmond;
+         /* flex-wrap: nowrap; */
+         /* flex-wrap: wrap; */
+         /* flex-wrap: wrap-reverse; */
+         flex-flow: row wrap;
+     }
+     .container2{
+         display:flex;
+         background-color: blanchedalmond;
+         justify-content: center;
+         justify-content: space-between;
+         justify-content: space-around;
+         justify-content: space-evenly;
+     }
+     .container3{
+         height: 700px;
+         display: flex;
+         background-color: blanchedalmond;
+         align-items: flex-start;
+         align-items: center;
+         align-items: flex-end;
+         align-items: stretch;
+         align-content: flex-start;
+     }
+     .container4{
+        height: 700px;
+
+         width: 700px;
+    
+         display: flex;
+         background-color: blanchedalmond;
+         flex-flow: row wrap;
+         /* align-content: flex-start; */
+         
+     }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <ol>
+        <li>hie</li>
+        <li>hie</li>
+        <li>hie</li>
+        <li>hie</li>
+        <li>hie</li>
+        
+    </ol>
+</div>
+ <div class="flexx">
+     <div id="box">item1</div>
+     <div id="box1">item2</div>
+     <div id="box2">item3</div>
+     <div id="box3">item4</div>
+ </div>
+ <div class="container">
+     <div class="box">item1</div>
+     <div class="box">item2</div>
+     <div class="box">item3</div>
+     <div class="box">item5</div>
+     <div class="box">item6</div>
+     <div class="box">item7</div>
+     <div class="box">item8</div>
+     <div class="box">item9</div>
+     <div class="box">item10</div>
+     <div class="box">item11</div>
+     <div class="box">item12</div>
+     <div class="box">item13</div>
+     <div class="box">item14</div>
+     <div class="box">item15</div>
+ </div>
+ <div class="container2">
+     <div class="box">item1</div>
+     <div class="box">item2</div>
+     <div class="box">item3</div>
+     <div class="box">item5</div>
+     <div class="box">item6</div>
+    
+ </div>
+ <div class="container3">
+     <div class="box">item1</div>
+     <div class="box">item2</div>
+     <div class="box">item3</div>
+     <div class="box">item5</div>
+     <div class="box">item6</div>
+    
+ </div>
+ <div class="container4">
+    <div class="box">item1</div>
+    <div class="box">item2</div>
+    <div class="box">item3</div>
+    <div class="box">item5</div>
+    <div class="box">item6</div>
+    <div class="box">item7</div>
+    <div class="box">item8</div>
+    <div class="box">item9</div>
+    <div class="box">item10</div>
+    <div class="box">item11</div>
+    <div class="box">item12</div>
+    <div class="box">item13</div>
+    <div class="box">item14</div>
+    <div class="box">item15</div>
+</div>
+</body>
+</html>

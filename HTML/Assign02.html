@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </style>
+</head>
+<body>
+    <!-- 1]colgroup and col  -->
+        <h1>Colgroup and Col</h1>
+    <table border="5">
+        <caption>Student Information</caption> 
+        <colgroup> <!--specifies a group of two or more columns-->
+            <col span=2  style="background-color: red;">
+            <col >
+        </colgroup>
+        <tr>
+            <th>StudentId</th>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Total marks</th>
+        </tr>
+
+       <tbody>
+        <tr>
+            <td>1</d>
+            <td>Amruta</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<!-- 2]object => it is specifically used for external source for eg image,website etc -->
+<h1>Object</h1>
+<object data="https://en.wikipedia.org/wiki/Virat_Kohli" width="500px" height="500px" ></object>
+
+<!-- 3]select with option and optgroup  =>It creates a grouping of options -->
+<h1>Select with option and optgroup</h1>
+<form>
+    <label for="cars">Choose a Dish:</label>
+    <select name="cars">
+      <optgroup label="Indian Food">
+        <option value="Vadapav">Vadapav</option>
+        <option value="Pohe">Pohe</option>
+      </optgroup>
+      <optgroup label="Foreign Food">
+        <option value="Burger">Burger</option>
+        <option value="Pizza">Pizza</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+  <!-- 4]Pre it displays everything as you write in code-->
+  <h1>Pre</h1>
+  <pre>
+Hie! My name is
+Amruta  and I love
+Web  Development
+  </pre>
+  <p>
+    Hie! My name is
+    Amruta  and I love
+    Web  Development
+  </p>
+
+  <!-- 5]Progress just to show progress of any file -->
+
+  <h1>Progress</h1>
+  <label>Downloading progress:</label>
+<progress  value="70" max="100"> 70% </progress>
+
+<!-- 6]textarea u can write as much as you want -->
+<h1>Textarea</h1>
+<textarea cols="30" rows="10"></textarea>
+
+
+<!-- 7]Time =>just for user for better readability and for SEO -->
+<h1>Time</h1>
+<p>Hie I will reach at <time>3.00 pm</time></p>
+
+<!-- 8]q =>it is used for short line quoatation -->
+<h1>Q</h1>
+<p>Hie i am Amruta and I love <q>Web Development </q></p>
+</body>
+
+<!-- 9]blockquote tag specifies a section that is quoted from another source. -->
+<h1>Blockquote</h1>
+
+<p>Here is a quote from Wikipedia website:</p>
+
+<blockquote cite="https://en.wikipedia.org/wiki/Virat_Kohli">
+    Vir   at Kohli (Hindustani: [ʋɪˈraːʈ ˈkoːɦliː] (About this soundlisten); born 5 November 1988) is an Indian cricketer and the curren         t captain of the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best contemporary batsmen in the world.[3] He plays for Delhi in domestic cricket and for Royal Challengers Bangalore in the Indian Premier League (IPL) as captain of the franchise since 2013.
+</blockquote>
+
+<!-- 10]abbr defines an abbrevation of short form with the attribute title-->
+
+<h1>The abbr element</h1>
+
+<p>The <abbr title="Search Engine Optimization">SEO</abbr> was founded in 1948.</p>
+
+<!-- 11]bdo =>bi-directional overide -->
+
+<h1>The bdo element</h1>
+
+<p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>  
+  
+<p><bdo dir="ltr">This paragraph will go right-to-left.</bdo></p>  
+
+</html>

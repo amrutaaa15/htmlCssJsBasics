@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" , content="Brief description of web page">
+    <meta name="keywords" ,content="Important words of web page">
+    <meta name="author" , content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightslategrey;
+            margin: 10px;
+            transition: 3s;
+        }
+
+        #boxx:hover {
+            transform: translateX(50px);
+        }
+
+        #boxx1:hover {
+            transform: translateY(50px);
+        }
+
+        #boxx2:hover {
+            transform: translate(50px, 50px);
+        }
+
+        .didi {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+
+        }
+
+        #boxx3:hover {
+            transform: translate(50px);
+        }
+
+        #boxx4:hover {
+            transform: scaleX(2);
+        }
+
+        #boxx5:hover {
+            transform: scaleY(2);
+        }
+
+        #boxx6:hover {
+            transform: scale(2);
+        }
+
+        #bo:hover {
+            transform: rotateX(360deg)
+        }
+
+        #boxx7:hover {
+            transform: rotateY(180deg);
+        }
+
+        #boxx8:hover {
+            transform: skewX(20deg);
+        }
+
+        #boxx9:hover {
+            transform: skewY(30deg);
+        }
+
+        #boxx10:hover {
+            transform: skew(20deg);
+        }
+
+        .boo:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="myFun()">Hover</button>
+    <div class="box" id="boxx"></div>
+    <div class="box" id="boxx1"></div>
+    <div class="box" id="boxx2"></div>
+    <div class="box" id="boxx3"></div>
+
+    <section class="didi">
+        <div class="box" id="boxx4"></div>
+        <div class="box" id="boxx5"></div>
+        <div class="box" id="boxx6"></div>
+    </section>
+
+    <div class="box" id="bo"></div>
+    <div class="box" id="boxx7"></div>
+    <div class="box" id="boxx8"></div>
+    <div class="box" id="boxx9"></div>
+    <div class="box" id="boxx10"></div>
+
+    <div class="box boo"></div>
+
+    <script>
+        function myFun() {
+            var block = document.getElementById("boxx");
+            block.style.transform = "translate(50px)";
+        }
+    </script>
+</body>
+
+</html>

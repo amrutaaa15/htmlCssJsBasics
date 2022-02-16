@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        .box{
+            height:500px;
+            width:700px;
+        }
+    </style>
+    <script>
+        let imgArray1 = ['virat1.jpg','virat2.webp', 'virat3.webp', 'virat4.webp', 'virat5.jpg', 'virat6.jpeg'];
+        let i = 0;
+        $(() => {
+            setInterval(() => {
+                slideImg();
+            }, 2000)
+        })
+        let slideImg = (() => {
+            $('img').attr('src', `/imgs/${imgArray1[i]}`)
+            if (i == imgArray1.length - 1) {
+                i = 0;
+            }
+            else {
+                i++;
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Image Slide Show</h1>
+    <div class="box">
+        <img src="">
+    </div>
+
+</body>
+
+</html>

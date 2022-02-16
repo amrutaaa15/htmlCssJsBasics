@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form oninput="addition.value=parseFloat(num1.value)+ parseFloat(num2.value)">
+        <input type="text"name="num1" value="0" id="num"> +
+        <input type="text"name="num2" value="0" id="numm">=
+
+        <output name="addition" id="add"></output>
+        
+    </form>
+    <br>
+
+    <form oninput=" event.preventDefault(), addition.value=parseFloat(num1.value)+ parseFloat(num2.value)">
+        Enter number 1: <input type="text" name="num1" value="0" id="num"> +
+        Enter number 2: <input type="text" name="num2" value="0" id="numm">=
+
+        <output name="addition" id="add"></output>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

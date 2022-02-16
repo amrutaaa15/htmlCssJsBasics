@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="virat1.jpg" alt="" id="img" height="200px" width="200px">
+
+    <script>
+        let img=document.getElementById('img');
+        let h=img.height;
+        let w=img.width;
+
+        console.log(w+" "+h);
+        setInterval(() => {
+            setSize();
+        }, 5000);
+
+        let setSize=()=>{
+            h=h+100;
+            w=w+100;
+            console.log(w+" "+h);
+
+            img.width=w;
+            img.height=h;
+            img.style.border="21px solid black"
+            img.src="virat2.jpg"
+
+        }
+    </script>
+</body>
+</html>

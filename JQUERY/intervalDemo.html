@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery-3.6.0.min.js"></script>
+    <!-- <script src="/toggle.js" defer></script> -->
+    <script>
+
+$(()=>{
+      $(".fade").css({
+        width:'600px',
+        height:'600px',
+        borderColor:"hotpink",
+      });
+
+      setInterval(()=>{
+          changeColor();
+      },1000)
+
+      let colorArr=['pink','red','yellow','brown'];
+      let i=0;
+      let changeColor=()=>{
+        $('.fade').css({
+            backgroundColor:colorArr[i]
+        })
+        if(i==colorArr.length-1){
+            i=0;
+        }
+        else{
+            i++;
+        }
+      }
+    });
+
+        </script>
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+  
+    
+    <div id="box" class="fade">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eos iste saepe, voluptates ut nam necessitatibus nobis, consequatur quas tempore optio. Laudantium, tempore. Vero autem laudantium voluptatem tempore, dolor ab!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eos iste saepe, voluptates ut nam necessitatibus nobis, consequatur quas tempore optio. Laudantium, tempore. Vero autem laudantium voluptatem tempore, dolor ab!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eos iste saepe, voluptates ut nam necessitatibus nobis, consequatur quas tempore optio. Laudantium, tempore. Vero autem laudantium voluptatem tempore, dolor ab!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eos iste saepe, voluptates ut nam necessitatibus nobis, consequatur quas tempore optio. Laudantium, tempore. Vero autem laudantium voluptatem tempore, dolor ab!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eos iste saepe, voluptates ut nam necessitatibus nobis, consequatur quas tempore optio. Laudantium, tempore. Vero autem laudantium voluptatem tempore, dolor ab!
+    </div>
+   
+    
+    
+</body>
+</html>

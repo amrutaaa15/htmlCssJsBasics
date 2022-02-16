@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title><form action=" " method="get"></form> Document</title>
+<style>
+    span{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <form action="success.html" onsubmit="return validateForm()" novalidate>
+        <label for="name">enter name:</label>
+        <input type="text" id="name" onblur="validate1()" required><br>
+        <span id="error1"></span><br><br>
+
+        <label for="age">enter age:</label>
+        <input type="number" id="age" onblur="validate2()" required><br>
+        <span id="error2"></span><br><br>
+        
+        <label for="mail">enter mail:</label>
+        <input type="email" id="email" onblur="validate3()" required><br>
+        <span id="error3"></span><br><br>
+
+        <label for="password">enter password:</label>
+        <input type="password" id="password" onblur="validate4()" required><br>
+        <span id="error4"></span><br><br>
+
+        <label for="password">re enter password:</label>
+        <input type="password" id="conpassword" onblur="validate5()" required><br>
+        <span id="error5"></span><br><br>
+
+        <label><input type="checkbox" id="showpass" onchange="showPass()">showpassword</label>
+        <br><br>
+        <input type="submit">
+
+    </form>
+    <script src="devesh.js"></script>
+    
+</body>
+</html>

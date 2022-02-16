@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" , content="Brief description of web page">
+    <meta name="keywords" ,content="Important words of web page">
+    <meta name="author" , content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box1,
+        .boxx {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            transition: all 6s;
+            font-size: 30px;
+            border: 2px solid blue;
+            box-shadow: 3px 5px 1px white;
+        }
+
+        .box1:hover {
+            /* matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() ) */
+            transform: matrix(1, 2, 1, 1, 100, 100);
+        }
+
+        .boxx {
+            margin: 50px 12px;
+        }
+
+        .flexContainer {
+            display: flex;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grow {
+            display: flex;
+            font-size: 30px;
+        }
+
+        #box1 {
+            flex-grow: 3;
+        }
+
+        #box2 {
+            flex-shrink: 10;
+        }
+
+        #box3 {
+            flex-grow: 2;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Matrix</h1>
+    <div class="box1">Lets Move</div>
+
+    <h1>Flex Container</h1>
+    <div class="flexContainer">
+        <div class="boxx">item1</div>
+        <div class="boxx">item2</div>
+        <div class="boxx">item3</div>
+        <div class="boxx">item4</div>
+        <div class="boxx">item5</div>
+        <div class="boxx">item6</div>
+        <div class="boxx">item7</div>
+    </div>
+
+    <h1>Lets see flex-grow and flex-shrink</h1>
+    <div class="grow">
+        <div class="boxx" id="box1">item1</div>
+        <div class="boxx" id="box2">item2</div>
+        <div class="boxx" id="box3">item3</div>
+    </div>
+
+
+</body>
+
+</html>

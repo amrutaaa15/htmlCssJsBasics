@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery-3.6.0.min.js"></script>
+    <!-- <script src="/toggle.js" defer></script> -->
+    <script>
+
+$(()=>{
+     
+    $("[type='text").focus(function(){
+        $(this).css({
+            border:'10px solid green'
+        });
+    });
+    $("#age").blur(function(){
+        let vall=$(this).val();
+        console.log(vall);
+    })
+    $("p").mouseover(function(){
+        let h=$(this).html();
+        console.log(h);
+    })
+
+    $("img").mouseenter(function(){
+        let path=$(this).attr('src');
+        console.log(path);
+        // let w=$(this).attr('width');
+        // console.log(w);
+
+        let w2=$(this).width();
+        // console.log(w2)
+        let h=$(this).attr('height');
+        // console.log(h);
+        
+        $(this).attr('src','https://img.etimg.com/thumb/msid-71917504,width-1200,height-900,imgsize-623426,overlay-etpanache/photo.jpg');
+        h=parseInt(h)+100;
+        console.log(h);
+        $(this).attr('height',h);
+        // console.log(h2);
+        $(this).width(w2+30);
+
+    });
+    });
+
+        </script>
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+  
+    <label>Enter Name</label>
+    <input type="text" name="" id="fname">
+
+    <label>Enter Age</label>
+    <input type="number" name="" id="age">
+   
+    <p>Helllo <strong>Amruta</strong></p>
+
+    <img src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170661/virat-kohli.jpg" height="300" >
+    
+    
+</body>
+</html>

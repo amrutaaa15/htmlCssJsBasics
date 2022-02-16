@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <audio autoplay loop controls>
+        <source src="myMedia/rain-01.mp3" type="audio/mp3">
+    </audio>
+
+    <audio src="myMedia/rain-01.mp3" controls type="audio/mp2"></audio>
+
+    <video  autoplay controls height="500"> 
+        <source src="myMedia/Cartoon.mp4" >
+    </video>
+
+    <video loop controls height="300" src="myMedia/Cartoon.mp4"></video>
+    <hr>
+
+    <article>
+        <embed src=" https://www.youtube.com/embed/gZDi8bCXtGE">
+    </article>
+  
+        <iframe src="Table.html"></iframe> <!--has access-->
+        <iframe src="https://mail.google.com/mail/u/0/#inbox"></iframe> <!--no access for external links-->
+
+        <iframe width="775" height="409" src="https://www.youtube.com/embed/gZDi8bCXtGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+        <a href="Table.html" target="table"> Click to see Table</a><br>
+<!-- if iframe has sanme name then first matching name will be selected to display contents-->
+        <iframe name="table"></iframe>
+        <iframe name="table"></iframe>
+</body>
+</html>

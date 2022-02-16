@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amruta's First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="description", content="Brief description of web page">
+    <meta name="keywords",content="Important words of web page">
+    <meta name="author", content="Name of Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        meter{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <canvas style="border: 2px solid red;">
+        Amruta Khamkar
+    </canvas><br>
+
+    <meter min="0" low="10" high="90" value="9" max="100" id="fileUpload"></meter><br>
+
+    <meter min="0" low="10" high="90" optimum="95" value="9" max="100" id="fileUpload"></meter><br>
+    <meter min="0" low="10" high="90" value="9" max="100" id="fileUpload"></meter><br>
+
+    <!-- optimum=>nearest value -->
+    <!-- red=> if ur very far from optimum value
+    green=>normal between range
+    yellow=>if ur not between min and max -->
+</body>
+    <script>
+        const canvas=document.querySelector('canvas');
+        const ctx=canvas.getContext("2d");
+        ctx.fillStyle="black";
+        ctx.fillRect(570,50,100,100); x,y,width,height;
+        ctx.fillStyle="black";
+        ctx.fillText("Hello Amruta here,", 90,30);
+    
+    </script>
+
+</html>

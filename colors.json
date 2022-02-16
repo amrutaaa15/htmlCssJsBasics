@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57cd"
+  },
+  "colorName": "Blue",
+  "colorCode": "#0000FF"
+},{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57ce"
+  },
+  "colorName": "Brown",
+  "colorCode": "#581845"
+},{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57cf"
+  },
+  "colorName": "Purple",
+  "colorCode": "#7A33FF"
+},{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57d0"
+  },
+  "colorName": "White",
+  "colorCode": "#FFFFFF"
+},{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57d1"
+  },
+  "colorName": "Beige",
+  "colorCode": "#F5F5DC"
+},{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57d2"
+  },
+  "colorName": "Black",
+  "colorCode": "#000000"
+},{
+  "_id": {
+    "$oid": "61d29d41acb3af01946a57d3"
+  },
+  "colorName": "Grey",
+  "colorCode": "#808080"
+},{
+  "_id": {
+    "$oid": "61d3523a1f1a8fba0c0ad34c"
+  },
+  "colorName": "Pink",
+  "colorCode": "#ff1493"
+}]
